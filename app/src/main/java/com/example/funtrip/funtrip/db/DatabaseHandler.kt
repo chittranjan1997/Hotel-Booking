@@ -53,7 +53,7 @@ class DatabaseHandler(context: Context) : SQLiteOpenHelper(context, DatabaseHand
         tasks.name = cursor.getString(cursor.getColumnIndex(NAME))
         tasks.desc = cursor.getString(cursor.getColumnIndex(DESC))
         tasks.rate = cursor.getString(cursor.getColumnIndex(RATE))
-//        tasks.completed = cursor.getString(cursor.getColumnIndex(COMPLETED))
+
         cursor.close()
         return tasks
     }
