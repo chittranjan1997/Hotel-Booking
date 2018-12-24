@@ -50,7 +50,7 @@ class ModalActivity : AppCompatActivity() {
             initViews()
         }
         Log.d("oooo","kiko2")
-
+//
         initViews()
 
     }
@@ -74,6 +74,7 @@ class ModalActivity : AppCompatActivity() {
     }
 
     fun initViews() {
+        Log.d("ooopp","view")
         recyclerView = findViewById(R.id.recycler_view1) as RecyclerView
         taskRecyclerAdapter = RecyclerAdapter(tasksList = listTasks, context = applicationContext)
         linearLayoutManager = LinearLayoutManager(applicationContext)
